@@ -4,6 +4,7 @@
 **Docente:** Daniel Barragán C.  
 **Estudiante:** Óscar Daniel Molano  
 **Código:** A00267576  
+**Link:** https://github.com/odm95/so-exam1/tree/A00267576/add-exam1/A00267576  
 **Tema:** Comandos de Linux, Virtualización  
 **Correo:** daniel.barragan at correo.icesi.edu.co
 
@@ -24,13 +25,28 @@ El primer parcial del curso sistemas operativos trata sobre el manejo de los com
 2. Ortografía y redacción cuando sea necesario (5%)
 3. Resuelva los siguienes retos de la página https://cmdchallenge.com y presente la solución a cada uno de ellos a través de un ejemplo práctico en CentOS7. Presente capturas de pantalla relevantes como evidencias de lo realizado (20%)  
 
-
-
-  * sum_all_numbers
-  * replace_spaces_in_filenames
-  * reverse_readme
-  * remove_duplicated_lines
-  * disp_table
+  * sum_all_numbers  
+    
+  ![][1]  
+    
+  ![][2]  
+    
+  * replace_spaces_in_filenames  
+    
+  ![][3]  
+    
+  * reverse_readme  
+    
+  ![][4]  
+    
+  * remove_duplicated_lines  
+    
+  ![][5]  
+    
+  * disp_table  
+    
+  ![][6]  
+    
 4. Realice un script que cumpla las condiciones que se describen a continuación. Presente capturas de pantalla relevantes como evidencias del funcionamiento (30%)
   * El usuario gutenberg debe existir en el sistema operativo
   * El script se debe ejecutar cada 5 minutos, consulte el manual de crontab
@@ -44,3 +60,10 @@ El primer parcial del curso sistemas operativos trata sobre el manejo de los com
 * https://www.gutenberg.org  
 * https://github.com/jvns/kernel-module-fun/blob/master/rickroll.c
 * https://www.youtube.com/watch?v=efEZZZf_nTc
+
+[1]: imagenes/sum-me1.jpg  
+[2]: imagenes/sum-me2.jpg  
+[3]: imagenes/replace-space.jpg  
+[4]: imagenes/reverse-readme.jpg  
+[5]: imagenes/remove-duplicate.jpg  
+[6]: imagenes/display-table.jpg  

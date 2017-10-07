@@ -48,10 +48,30 @@ El primer parcial del curso sistemas operativos trata sobre el manejo de los com
   ![][6]  
     
 4. Realice un script que cumpla las condiciones que se describen a continuación. Presente capturas de pantalla relevantes como evidencias del funcionamiento (30%)
-  * El usuario gutenberg debe existir en el sistema operativo
-  * El script se debe ejecutar cada 5 minutos, consulte el manual de crontab
+  * El usuario gutenberg debe existir en el sistema operativo  
+  
+  * El script se debe ejecutar cada 5 minutos, consulte el manual de crontab  
   * EL script debe descargar un libro del proyecto https://www.gutenberg.org/ en el directorio /home/gutenberg/mybooks
   * Si ya existe un libro en el directorio mybooks, debe ser reemplazado  
+    
+    Creamos el usuaio gutenberg dentro de nuestro sistema operativo.
+    ![][7]  
+      
+    Como bien lo dice la pagina de http://www.gutenberg.org/files/ el ID de los libros se encuentra acertivamente desde el ID = 10000  
+    ![][8]  
+      
+    Usaremos el enlace http://www.gutenberg.org/files/id/id.txt para obtener el archivo txt del directorio del libro. Como ejemplo de un resultado del anterior link vamos a buscar el libro con ID = 10000  
+      
+    ![][9]  
+      
+    A continuación se muestra el script getbook5minutes.sh que lo que hace es descargar un libro en formato .txt en un directorio especifico del usuario gutenberg, posteriormente se enseña la configuración de Crontab para que ejecute cda 5 minutos la descarga de un libro. Cabe resaltar que en cada ejecución se borran los libros anteriormente descargados.  
+      
+    ![][10]  
+      
+    Podemos observar que después de 5 minutos se actualiza el libro.  
+      
+    ![][11]  
+      
 5. Describa el funcionamiento del código fuente rickroll.c del repositorio de github https://github.com/jvns/kernel-module-fun. Muestre el funcionamiento al compilar el código y cargarlo como un módulo del kernel a través de un video que deberá cargar en Youtube e incluir el enlace en el informe (30%). Se recomienda emplear el sistema operativo Ubuntu con interfaz gráfica para esta prueba.
 6. El informe debe ser entregado en formato pdf a través del moodle y el informe en formato README.md debe ser subido a un repositorio de github. El repositorio de github debe ser un fork de https://github.com/ICESI-Training/so-exam1 y para la entrega deberá hacer un Pull Request (PR) respetando la estructura definida. El código fuente y la url de github deben incluirse en el informe (10%)  
 
@@ -60,6 +80,9 @@ El primer parcial del curso sistemas operativos trata sobre el manejo de los com
 * https://www.gutenberg.org  
 * https://github.com/jvns/kernel-module-fun/blob/master/rickroll.c
 * https://www.youtube.com/watch?v=efEZZZf_nTc
+* https://www.creatigon.com
+* http://www.codigomaestro.com/linux/agregar-usuarios-y-grupos-en-centos-rhel/
+* http://www.desarrollolibre.net/blog/tema/106/linux/ejecutar-script-automaticamente-con-cron-en-linux#.WdlD7mjWyMo
 
 [1]: imagenes/sum-me1.jpg  
 [2]: imagenes/sum-me2.jpg  
@@ -67,3 +90,8 @@ El primer parcial del curso sistemas operativos trata sobre el manejo de los com
 [4]: imagenes/reverse-readme.jpg  
 [5]: imagenes/remove-duplicate.jpg  
 [6]: imagenes/display-table.jpg  
+[7]: imagenes/create-user.jpg  
+[8]: imagenes/gutenberg-evidence.jpg  
+[9]: imagenes/gutenberg-evidence2.jpg  
+[10]: imagenes/crontab.jpg  
+[11]: imagenes/crontab-evidence.jpg  
